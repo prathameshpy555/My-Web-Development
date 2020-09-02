@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <title>Fahrenheit to Celcius Temperature Converter</title>
+          <style>
+               #backbutton{
+              border: none;
+              font-size: medium;
+              padding: 10px;
+              border-radius: 8px;
+              background-color: lightgreen;
+              margin-right: 10px;
+              margin-top: 10;
+            }
+          </style>
+    </head>
+    <body>
+
+          <h2>Temperature Converter</h2>
+              <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+              <p>
+                <label>Fahrenheit</label>
+                <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+              </p>
+              <p>Celcius: <span id="outputCelcius"></span></p>
+
+          <script>
+              function temperatureConverter(valNum) {
+                valNum = parseFloat(valNum);
+                document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+              }
+          </script>
+          <div>
+            <button id="backbutton"><a href="(042)Links Button.html">Back button</a></button>
+        </div>
+
+    </body>
+</html>
