@@ -1,39 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-          <title>Pounds to Kilograms Weight Converter</title>
-          <style>
-            #backbutton{
-              border: none;
-              font-size: medium;
-              padding: 10px;
-              border-radius: 8px;
-              background-color: lightgreen;
-              margin-right: 10px;
-              margin-top: 10;
-            }
-          </style>
-    </head>
-    <body>
+<title>Pounds to Kilograms Weight Converter</title>
+<body>
 
-          <h2>Weight Converter</h2>
-            <p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+<h2>Weight Converter</h2>
+<p>Type a value in the Pounds field to convert the value to Kilograms:</p>
 
-            <p>
-              <label>Pounds</label>
-              <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
-            </p>
-            <p>Kilograms: <span id="outputKilograms"></span></p>
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
 
-          <script>
-                function weightConverter(valNum) {
-                  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
-                }
-          </script>
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+}
+</script>
 
-          <div>
-              <button id="backbutton"><a href="(042)Links Button.html">Back button</a></button>
-          </div>
-
-    </body>
+</body>
 </html>
