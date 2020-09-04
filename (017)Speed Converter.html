@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title>MPH to KPH Speed Converter</title>
+            <style>
+                  #backbutton{
+                    border: none;
+                    font-size: medium;
+                    padding: 10px;
+                    border-radius: 8px;
+                    background-color: lightgreen;
+                    margin-right: 10px;
+                    margin-top: 10;
+                  }
+            </style>
+      </head>
+      <body>
+
+      <h2>Speed Converter</h2>
+            <p>Type a value in the MPH field to convert the value to KPH:</p>
+
+            <p>
+              <label>MPH</label>
+              <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+            </p>
+            <p>KPH: <span id="outputKPH"></span></p>
+
+      <script>
+            function speedConverter(valNum) {
+              document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+            }
+      </script>
+          <div>
+                <button id="backbutton"><a href="(042)Links Button.html">Back button</a></button>
+          </div>
+
+      </body>
+</html>
